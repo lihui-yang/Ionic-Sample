@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button>
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title>DataDog PoC Sample</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="primary">
+    <ion-item color="primary"> 
+      <ion-avatar slot="start">
+        <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png">
+      </ion-avatar>
+      <ion-label>
+        <h1>EMMA</h1>
+        <p>Monthly Cost:<span class="money">$1,500</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <app-pickup-call-card status="hold" updatedAt="08/16/2022" createdAt="08/15/2022"
+  notes="Note: we are reviewing your information and will be shipped as soon as possible.">
+  <ion-card-header header>
+    <ion-card-subtitle>Last Cost</ion-card-subtitle>
+  </ion-card-header>
+  <ion-button footer color="primary" fill="clear" size="full" (click)="goToPickupCalls()">See All</ion-button>
+  </app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="primary" (click)="goToPickupCall()">
+      <ion-icon name="add"> </ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

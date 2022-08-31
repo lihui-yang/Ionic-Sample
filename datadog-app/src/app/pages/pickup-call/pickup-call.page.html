@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button>
+      <ion-back-button text=""></ion-back-button>
+    </ion-button>
+    <ion-title>Tracking Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg">
+  <ion-card>
+    <ion-card-content>
+      <p>Address: 111 Frake Street,</p>
+      <p>Coquitlam, BC</p>
+      <p>V2K 0I8</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item lines="insert">
+      <ion-label position="floating">Notes</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button size="full" color="primary" (click)="goToPickupCall()">Create Tracking Info</ion-button>
+</ion-content>
